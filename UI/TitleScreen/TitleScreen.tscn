@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Graphics/Player/jump.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Graphics/Other/Big_Bottom_Typeface_Normal.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Graphics/Other/Banner.png" type="Texture" id=3]
+[ext_resource path="res://UI/TitleScreen/TitleScreen.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 22
+font_data = ExtResource( 2 )
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.976471, 0.941176, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Banner" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -242.5
+margin_right = 242.5
+margin_bottom = 247.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cat" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -284.926
+margin_top = 69.2965
+margin_right = 795.074
+margin_bottom = 1149.3
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HighScore" type="Label" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -67.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.286275, 0.156863, 0.0588235, 1 )
+custom_colors/font_outline_modulate = Color( 0.921569, 0.678431, 0.615686, 1 )
+custom_colors/font_color_shadow = Color( 0.435294, 0.376471, 0.356863, 1 )
+text = "high score: 0"
+align = 1
+valign = 2
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Label" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -142.0
+margin_bottom = -142.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.286275, 0.156863, 0.0588235, 1 )
+custom_colors/font_outline_modulate = Color( 0.921569, 0.678431, 0.615686, 1 )
+custom_colors/font_color_shadow = Color( 0.435294, 0.376471, 0.356863, 1 )
+text = "press space to start"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
